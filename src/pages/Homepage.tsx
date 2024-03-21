@@ -9,7 +9,7 @@ export const Homepage = () => {
     <>
       <Hero />
       <HomeCards />
-      <JobListings />
+      <JobListings isHome={true} />
       <ViewAllJobs />
     </>
   );
