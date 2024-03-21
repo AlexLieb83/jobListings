@@ -1,5 +1,16 @@
 import React from "react";
 
 export const App = () => {
-  return <div className="text-5xl">App</div>;
+  const names = ["Hailey", "Alex", "Callie"];
+
+  return (
+    <>
+      <div className="text-5xl">App</div>
+      <ul>
+        {names.map((name, i) => (
+          <li key={i}>{name}</li>
+        ))}
+      </ul>
+    </>
+  );
 };
